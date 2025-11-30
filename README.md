@@ -32,13 +32,9 @@ Download the required datasets and place them in the specified directories:
 ## 🧪 MacVQA Task Execution
 
 ```bash
-cd MAC-T5/
+bash MACVQA_train.sh 1      # Train on standard splits
+bash MACVQA.sh 1            # Evaluate on standard splits
 
-# Standard Training & Testing
-bash scripts/MACVQA_train.sh 1      # Train on standard splits
-bash scripts/MACVQA.sh 1            # Evaluate on standard splits
-
-# Novel Composition Training & Testing (Group-5 setting)
-bash scripts/MACVQA_NOV_train.sh 1  # Train on novel-task splits
-bash scripts/MACVQA_NOV.sh 1        # Evaluate on novel-task splits
+bash MACVQA_NOV_train.sh 1  # Train on novel-task splits
+bash MACVQA_NOV.sh 1        # Evaluate on novel-task splits
 ```
